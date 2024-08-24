@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    /* F3F5FC */
+    --color-primario:#ccd7ff;   
+    --color-secundario:#0A3871;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fuente-inter);
+    font-size: 32px;
+}
+
+body{
+    background-color: var(--color-primario);
+    width: 100%;
+    box-sizing: border-box;    
+    background-image: url(img/RuidoR.png);
+    background-size: 110% 110%;
+    position: relative;
+
+}
+
+header{
+    padding: 10px;
+    /* width: 100%; */
+    /* background-color: aqua; */
+}
+
+main{
+    background-color: var(--color-secundario);
+    width: 100%;
+    height: 90%;
+}
+
+.tituloPrincipal{
+    text-align: center;
+    color: rgb(236, 239, 253);
+    font-size: 50px;
+    padding: 1%;
+}
+
+.principalTexto{
+    display: flex;
+    column-gap: 10%;
+    justify-content: space-around;
+    
+    /* background-color: black; */
+    
+}
+
+.contenedorEntradaTexto{
+    margin: 1% ;     
+    padding: 0% 2% 0% 0%;
+
+    /* background-color: red;     */
+
+}
+
+.cajaTexto{
+    margin: 3%;
+    padding: 2%;
+    background-image: url(img/BG_ZOOM_ONE_Re.png);
+    background-size: 100% 100%;
+    position: relative;
+    color: white;
+    
+    width: 93%;
+    height: 1%;
+       
+}
+
+.entradaTextoAEjecutarBotones{
+    margin: 2%;
+    padding: 1%;
+    font-family: var(--fuente-inter);
+    
+}
+
+.button{
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--color-primario);
+    border-color: black;
+    border-style: dotted;
+    border-width: .1rem;
+    border-radius: 10px;
+}
+
+.contenedorSalidaTexto{
+    margin: 1%;
+    padding: 1%;
+    /* background-color: forestgreen; */
+    
+}
+
+.imgMuneco{
+    width: 70%;    
+ }
+
+footer{
+    text-align: center;
+}
+
+
+@media (max-width: 350px){
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: var(--fuente-inter);
+        font-size: 16px;
+    }
+
+
+    body{
+        background-color: rgb(176, 163, 100);
+        width: auto;
+        height: auto;
+    }
+    
+    /* .header{
+        width: 5%;
+        height: 5%;
+    } */
+
+    /* .logoAlura{
+        width: 100%;
+    } */
+
+    main{
+        background-color: rgb(161, 129, 69);
+    }
+
+    .tituloPrincipal{
+        color: black;
+    }
+
+    .principalTexto{
+        
+        
+        width: auto;
+    }
+    .cajaTexto{
+        margin: 3%;
+        padding: 2%;
+        background-image: none;
+        color: black;
+        width: 93%;
+        height: 1%;
+        border-color: black;
+        border-style: dotted;
+        border-width: .2rem;
+        border-color: black;
+           
+    }
+
+    .imgMuneco{
+        width: 130%;    
+    }
+
+    .button{
+        padding: 1%;
+        margin: 1%;
+        background-color: var(--color-primario);
+        border-color: black;
+        border-style: dotted;
+        border-width: .1rem;
+        border-radius: 10px;
+    }
+
+    /* footer{
+        width: 10%;
+        text-align: center;
+    } */
+}

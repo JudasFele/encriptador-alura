@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="logoAlura" src="img/Logo.png" alt="Logo de alura">
+    </header>
+    
+    <main class="principal">
+        <h1 class="tituloPrincipal">Encriptador</h1>
+        
+        <div class="principalTexto">  
+            <div class="contenedorEntradaTexto">
+                <div class="entradaTextoAEjecutar">
+                    <textarea  class="cajaTexto" id="cajaIngresarTexto" placeholder="Ingrese el texto" cols="30" rows="6" ></textarea>
+                </div>
+                
+                <div class="entradaTextoAEjecutarBotones">
+                    <button class="button" onclick="buttonEncriptar()">Encriptar</button>
+                    <button class="button" onclick="butttonDesencriptar()" >Desencriptar</button>
+                </div>
+            </div>
+
+            <div class="contenedorSalidaTexto">                              
+                <div class="imgSalidaTexto">
+                    <img class="imgMuneco" src="img/Muñeco.png" alt="Persona mirando un diamante con una lupa ">
+                </div>
+
+                <div class="salidaDeTextoEjecutado">       
+                    <textarea class="cajaTexto" id="salidaTextoAqui" placeholder="Ningún mensaje fue encontrado" cols="30" rows="4" ></textarea>
+                </div>
+
+                <div>
+                    <button class="button" onclick="buttonCopiar()">Copiar</button>
+                </div>
+            </div>
+        </div>  
+    </main>
+
+    <footer>
+        <p>Judas Felix</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
