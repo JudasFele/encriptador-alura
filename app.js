@@ -9,6 +9,7 @@ function buttonEncriptar(){
     if (document.getElementById("cajaIngresarTexto").value != ""){
         validarTextoMinusculas();
         encriptar();
+        ocultarImagen();
     } else{
         alert("Por favor ingrese el texto en minusculas sin acentos y números")
     }
@@ -18,6 +19,7 @@ function butttonDesencriptar(){
     if (document.getElementById("cajaIngresarTexto").value != ""){
         validarTextoMinusculas();
         desencriptar();       
+        ocultarImagen();
     } else{
         alert("Por favor ingrese el texto en minusculas sin acentos y números")
     }
@@ -71,7 +73,7 @@ function validarTextoMinusculas(){
 function textoMinusculas(letra){
     
     return (letra === letra.toLowerCase() && letra.charCodeAt() <= 122);
-    // return (letra === letra.toLowerCase());      ---> Por si algo sale mal, Utilizar este
+    
 }
 
 
@@ -159,4 +161,9 @@ function desencriptar(){
 function borrarTexto(){
     document.getElementById("cajaIngresarTexto").value="";
     document.getElementById("salidaTextoAqui").value="";
+}
+
+
+function ocultarImagen(){
+    document.getElementById("imgNoSeEncontroNada").style.display = "none";
 }

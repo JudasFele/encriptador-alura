@@ -15,8 +15,8 @@
 }
 
 body{
+    
     background-color: var(--color-primario);
-    width: 100%;
     box-sizing: border-box;    
     background-image: url(img/RuidoR.png);
     background-size: 110% 110%;
@@ -26,20 +26,17 @@ body{
 
 header{
     padding: 10px;
-    /* width: 100%; */
-    /* background-color: aqua; */
 }
 
 main{
     background-color: var(--color-secundario);
-    width: 100%;
-    height: 90%;
+    padding: 0 8% ; 
 }
 
 .tituloPrincipal{
     text-align: center;
     color: rgb(236, 239, 253);
-    font-size: 50px;
+    font-size: 2rem;
     padding: 1%;
 }
 
@@ -48,15 +45,13 @@ main{
     column-gap: 10%;
     justify-content: space-around;
     
-    /* background-color: black; */
-    
+    align-items: center;
+        
 }
 
 .contenedorEntradaTexto{
     margin: 1% ;     
     padding: 0% 2% 0% 0%;
-
-    /* background-color: red;     */
 
 }
 
@@ -92,17 +87,17 @@ main{
 
 .contenedorSalidaTexto{
     margin: 1%;
-    padding: 1%;
-    /* background-color: forestgreen; */
-    
+    padding: 1%;    
 }
 
 .imgMuneco{
     width: 70%;    
  }
 
-footer{
+footer{    
     text-align: center;
+    padding: 5px;
+   
 }
 
 
@@ -117,18 +112,9 @@ footer{
 
     body{
         background-color: rgb(176, 163, 100);
-        width: auto;
-        height: auto;
+        
     }
     
-    /* .header{
-        width: 5%;
-        height: 5%;
-    } */
-
-    /* .logoAlura{
-        width: 100%;
-    } */
 
     main{
         background-color: rgb(161, 129, 69);
@@ -143,17 +129,13 @@ footer{
         
         width: auto;
     }
-    .cajaTexto{
-        margin: 3%;
-        padding: 2%;
+    .cajaTexto{        
         background-image: none;
         color: black;
-        width: 93%;
-        height: 1%;
         border-color: black;
         border-style: dotted;
         border-width: .2rem;
-        border-color: black;
+        border-color: rgb(151, 99, 3);
            
     }
 
@@ -171,8 +153,8 @@ footer{
         border-radius: 10px;
     }
 
-    /* footer{
-        width: 10%;
+    footer{
+        width: .1%;
         text-align: center;
-    } */
+    }
 }
